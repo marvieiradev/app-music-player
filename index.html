@@ -4,10 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Music Player</title>
 </head>
 
 <body>
+    <div class="music-player" id="music-player">
+        <div class="img-container">
+            <img src="images/cover.png" alt="music-cover" id="cover">
+        </div>
+        <h3 id="title">Musica</h3>
+        <div id="equalizer">
+            <div id="horizontal"></div>
+            <div id="vertical-lines">
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+                <div id="vertical"></div>
+            </div>
+        </div>
+        <div class="audio-info">
+            <div class="progress-container" id="progress-container">
+                <audio src="" id="audio"></audio>
+                <div class="navigation">
+                    <button id="prev" class="action-btn">
+                        <i class="fas fa-backward"></i>
+                    </button>
+
+                    <button id="play" class="action-btn action-btn-big">
+                        <i class="fas fa-play"></i>
+                    </button>
+
+                    <button id="next" class="action-btn">
+                        <i class="fas fa-forward"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/8e4a25e86e.js" crossorigin="anonymous"></script>
 
 </body>
 
