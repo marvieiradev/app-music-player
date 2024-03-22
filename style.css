@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #330033;
+    /*background-image: ;*/
+}
+
+.music-player {
+    height: 80vh;
+    width: 60vh;
+    padding: 20px;
+    margin: 0;
+    background: rgb(255, 176, 2);
+    background: linear-gradient(100deg, rgba(255, 176, 2, 1)0%, rgba(232, 237, 0, 1));
+    box-shadow: 0 20px 20px 0 rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.audio-container {
+    background-color: black;
+    border-radius: 15px;
+    box-shadow: 0 20px 20px 0 rgb(247, 148, 1);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 30px;
+    z-index: 10;
+}
+
+.img-container {
+    position: relative;
+    width: 200px;
+}
+
+.img-container img {
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+    height: 200px;
+    width: inherit;
+    animation: rotate 10s linear infinite;
+    animation-play-state: paused;
+}
+
+.play .img-container img {
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.action-btn {
+    background-color: black;
+    border: 0;
+    color: #f7be04;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 20px;
+}
+
+.action-btn .action-btn-big {
+    color: #fcb51b;
+    font-size: 30px;
+}
+
+.action-btn:focus {
+    outline: 0;
+}
+
+.audio-info {
+    display: flex;
+    background: rgb(255, 90, 1);
+    background: linear-gradient(270deg, rgba(255, 90, 1, 1)0%, rgba(255, 90, 1, 0.6)100%);
+    border-radius: 15px 15px 0px 0px;
+    width: 95%;
+    padding: 5px;
+    margin-bottom: -5px;
+}
+
+.progress-container {
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 10px;
+    width: 100%;
+}
+
+.progress {
+    background-color: black;
+    border-radius: 50px;
+    height: 100%;
+    width: 50%;
+    transition: width 0.15 linear;
+}
