@@ -9,16 +9,14 @@ const progressContainer = document.getElementById('progress-container');
 const title = document.getElementById('title');
 const cover = document.getElementById('cover');
 
-const songs = ["just-cant-enougth", "no-one-knows"]
+let songIndex = 0;
 
-let songIndex = 1;
+loadSong(songIndex);
 
-loadSong(songs[songIndex]);
-
-function loadSong(song) {
-    title.innerText = song
-    audio.src = `musics/${song}.mp3`;
-    //cover.src = `images/${song}.png`
+function loadSong(index) {
+    title.innerText = `${musics[index].name}`;
+    audio.src = `${musics[index].music_url}`;
+    cover.src = `${musics[index].cover_url}`;
 }
 
 function playSong() {
@@ -29,7 +27,7 @@ function playSong() {
 }
 
 function pauseSong() {
-    musicPlayer.classList.add("play");
+    musicPlayer.classList.remove("play");
     playBtn.querySelector('i.fas').classList.add('fa-play');
     playBtn.querySelector('i.fas').classList.remove('fa-pause');
     audio.pause();
@@ -38,18 +36,18 @@ function pauseSong() {
 function prevSong() {
     songIndex--;
     if (songIndex < 0) {
-        songIndex = songs.length - 1;
+        songIndex = musics.length - 1;
     }
-    loadSong(songs[songIndex])
+    loadSong(songIndex)
     playSong();
 }
 
 function nextSong() {
     songIndex++;
-    if (songIndex > songs.length - 1) {
+    if (songIndex > musics.length - 1) {
         songIndex = 0;
     }
-    loadSong(songs[songIndex])
+    loadSong(songIndex)
     playSong();
 }
 
