@@ -12,9 +12,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #330033;
     align-items: center;
-    /*background-image: ;*/
+    background: rgb(93, 48, 255);
+    background: radial-gradient(circle, rgba(93, 48, 255, 1) 0%, rgba(213, 85, 244, 1) 100%);
 }
 
 .music-player {
