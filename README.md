@@ -11,3 +11,5 @@ Para utilizar basta clicar no botão play para tocar, pause para pausar ou nos b
 ## Informações
 
 Projeto desenvolvido utilizando apenas HTML, CSS e JavaScript.
+
+<img src="screenshot.jpg"/>
